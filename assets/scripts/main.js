@@ -50,7 +50,18 @@ function addRecipesToDocument(recipes) {
   //            Append each element to <main>
   recipes.forEach(recipe => {
     let recCard = document.createElement('recipe-card');
-    recCard.data = recipe.data;
+/*     recCard.data = {
+      imgSrc: 'recipe.imgSrc',
+      imgAlt: 'recipe.imgAlt',
+      titleLnk: 'recipe.titleLnk',
+      titleTxt: 'recipe.titleTxt',
+      organization: 'recipe.organization',
+      rating: 'recipe.rating',
+      numRatings: 'recipe.numRatings',
+      lengthTime: 'recipe.lengthTime',
+      ingredients: 'recipe.ingredients'
+
+    }; */
     el.append(recCard);
   });
 }
